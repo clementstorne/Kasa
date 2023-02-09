@@ -9,6 +9,12 @@
   height: 68px;
 }
 
+.links-list {
+  list-style: none;
+  display: flex;
+  padding-right: 50px;
+}
+
 .link {
   display: block;
   font-weight: 500;
@@ -24,15 +30,3 @@
   text-decoration: underline;
   margin-left: 57px;
 }
-
-.links-list {
-  list-style: none;
-  display: flex;
-  padding-right: 50px;
-}
-
-// header li a {
-//   display: block;
-//   padding: 32px;
-//   border-top: solid transparent 2px;
-// }
