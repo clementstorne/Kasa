@@ -1,7 +1,9 @@
+import Header from "../components/Header";
+
 export default function About() {
   return (
     <div>
-      <h1>Kasa</h1>
+      <Header />
       <h2>Fiabilité</h2>
       <p>
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les

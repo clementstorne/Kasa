@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 68px;
+}
+
+.link {
+  display: block;
+  font-weight: 500;
+  color: $color-primary;
+  text-decoration: none;
+  margin-left: 57px;
+}
+
+.link-active {
+  display: block;
+  font-weight: 500;
+  color: $color-primary;
+  text-decoration: underline;
+  margin-left: 57px;
+}
+
+.links-list {
+  list-style: none;
+  display: flex;
+  padding-right: 50px;
+}
+
+// header li a {
+//   display: block;
+//   padding: 32px;
+//   border-top: solid transparent 2px;
+// }

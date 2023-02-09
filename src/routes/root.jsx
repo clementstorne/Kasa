@@ -1,3 +1,9 @@
+import Header from "../components/Header";
+
 export default function Root() {
-  return <h1>Kasa</h1>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
