@@ -5,6 +5,13 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: $gray-lighter;
+  background: $gray-lighter;
   border-radius: 25px;
+
+  @include sm {
+    flex-flow: column nowrap;
+    background: none;
+    margin-top: 22px;
+    padding: 0;
+  }
 }

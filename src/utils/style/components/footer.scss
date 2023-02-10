@@ -7,6 +7,11 @@
   justify-content: flex-end;
   align-items: center;
   background-color: $black;
+
+  @include md {
+    margin: 0 -20px -20px;
+    justify-content: center;
+  }
 }
 
 .logo-footer {
@@ -18,4 +23,9 @@
   font-size: 24px;
   font-weight: 500;
   color: $white;
+
+  @include md {
+    margin-top: 29px;
+    font-size: 12px;
+  }
 }
