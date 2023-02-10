@@ -1,9 +1,7 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   height: 209px;
+  margin: 50px -100px 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;

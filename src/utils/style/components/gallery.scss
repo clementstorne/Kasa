@@ -1,0 +1,10 @@
+.gallery {
+  margin-top: 43px;
+  padding: 56px 50px 6px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $gray-lighter;
+  border-radius: 25px;
+}
