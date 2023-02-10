@@ -6,7 +6,7 @@ import NavList from "./NavList";
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Logo de Kasa" className="logo" />
+      <img src={logo} alt="Logo de Kasa" className="logo-header" />
       <NavList />
       {/* <nav className="navbar">
         <NavLink to={`/`} className="link">
