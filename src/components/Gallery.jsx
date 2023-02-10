@@ -1,18 +1,18 @@
 import "../index.scss";
+import accomodations from "../data/logements.json";
 
 import Card from "./Card";
 
 function Gallery() {
-  return (
-    <section className="gallery">
-      <Card title="Titre de la location" />
-      <Card title="Titre de la location" />
-      <Card title="Titre de la location" />
-      <Card title="Titre de la location" />
-      <Card title="Titre de la location" />
-      <Card title="Titre de la location" />
-    </section>
-  );
+  const accomodationsList = accomodations.map((accomodation) => (
+    <Card
+      key={accomodation.id}
+      id={accomodation.id}
+      title={accomodation.title}
+      image={accomodation.cover}
+    />
+  ));
+  return <section className="gallery">{accomodationsList}</section>;
 }
 
 export default Gallery;

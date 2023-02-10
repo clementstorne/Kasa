@@ -1,20 +1,20 @@
 import "../index.scss";
 
+import { Link } from "react-router-dom";
+
 function Card(props) {
   return (
-    <div className="thumb">
-      {props.image ? (
+    <Link to={`/accomodation/${props.id}`}>
+      <div className="thumb">
         <img
           src={props.image}
           alt={props.title}
           className="thumb-background-image"
         />
-      ) : (
-        <div className="thumb-background"></div>
-      )}
-      <div className="thumb-gradient"></div>
-      <h2 className="thumb-title">{props.title}</h2>
-    </div>
+        <div className="thumb-gradient"></div>
+        <h2 className="thumb-title">{props.title}</h2>
+      </div>
+    </Link>
   );
 }
 
