@@ -1,0 +1,35 @@
+.error {
+  color: $color-primary;
+  text-align: center;
+
+  &-title {
+    margin: 169px 0 0;
+    font-size: 288px;
+    font-weight: 700;
+
+    @include md {
+      margin: 176px 0 0;
+      font-size: 96px;
+    }
+  }
+
+  &-text {
+    margin: 66px 0 182px;
+    font-size: 36px;
+    font-weight: 500;
+
+    @include md {
+      margin: 11px 58px 133px;
+      font-size: 18px;
+    }
+  }
+
+  &-link {
+    color: $color-primary;
+    font-size: 18px;
+
+    @include md {
+      font-size: 14px;
+    }
+  }
+}

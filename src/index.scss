@@ -1,12 +1,13 @@
-@import "./utils/style/base/typography";
+@import "./style/base/typography";
 
-@import "./utils/style/utils/variables";
-@import "./utils/style/utils/mixin";
+@import "./style/utils/variables";
+@import "./style/utils/mixin";
 
-@import "./utils/style/base/base";
+@import "./style/base/base";
 
-@import "./utils/style/components/header";
-@import "./utils/style/components/banner";
-@import "./utils/style/components/gallery";
-@import "./utils/style/components/card";
-@import "./utils/style/components/footer";
+@import "./style/components/header";
+@import "./style/components/banner";
+@import "./style/components/gallery";
+@import "./style/components/card";
+@import "./style/components/footer";
+@import "./style/components/error";

@@ -1,7 +1,7 @@
 .footer {
-  width: 100vw;
+  width: calc(100% + 200px);
   height: 209px;
-  margin: 50px -100px 0;
+  margin: 50px -100px -40px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -9,6 +9,7 @@
   background-color: $black;
 
   @include md {
+    width: calc(100% + 40px);
     margin: 0 -20px -20px;
     justify-content: center;
   }
