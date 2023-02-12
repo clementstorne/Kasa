@@ -35,12 +35,11 @@
     text-transform: uppercase;
     margin-left: 10px;
   }
-}
 
-.link-active {
-  display: block;
-  font-weight: 500;
-  color: $color-primary;
-  text-decoration: underline;
-  margin-left: 57px;
+  &-active {
+    display: block;
+    font-weight: 500;
+    color: $color-primary;
+    text-decoration: underline;
+  }
 }

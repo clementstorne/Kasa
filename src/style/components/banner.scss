@@ -15,6 +15,12 @@
     height: 111px;
     margin-top: 16px;
   }
+
+  &-big {
+    @include md {
+      height: 223px !important;
+    }
+  }
 }
 
 .banner-background-image {
@@ -24,8 +30,9 @@
   opacity: 0.7;
 
   @include md {
-    min-height: 111px;
-    object-position: 50% 50%;
+    // min-height: 111px;
+    min-height: 258px;
+    // object-position: 50% 50%;
   }
 }
 

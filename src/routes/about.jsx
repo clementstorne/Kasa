@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <Banner image={banner} text="" />
+      <Banner image={banner} big="true" />
 
       <div className="dropdown-container">
         <Dropdown
