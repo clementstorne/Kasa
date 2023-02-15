@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+  box-sizing: border-box;
 
   @include md {
     margin: 20px;

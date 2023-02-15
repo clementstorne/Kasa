@@ -5,12 +5,15 @@
 
 @import "./style/base/base";
 
-@import "./style/pages/about.scss";
+@import "./style/pages/accomodation.scss";
 
 @import "./style/components/header";
 @import "./style/components/banner";
 @import "./style/components/gallery";
 @import "./style/components/card";
 @import "./style/components/dropdown";
+@import "./style/components/host";
+@import "./style/components/rating";
+@import "./style/components/tag";
 @import "./style/components/footer";
 @import "./style/components/error";

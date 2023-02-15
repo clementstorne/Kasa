@@ -33,7 +33,7 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    font-style: 24px;
+    font-size: 24px;
     font-weight: 500;
     background: $color-primary;
     border-radius: 5px;
@@ -60,14 +60,6 @@
       height: 19px;
       right: 5px;
     }
-
-    &-expand {
-      background-image: url(../../assets/icons/expand.svg);
-    }
-
-    &-reduce {
-      background-image: url(../../assets/icons/reduce.svg);
-    }
   }
 
   &-content {
@@ -82,6 +74,91 @@
     @include md {
       padding: 23px 7px 52px 11px;
       font-size: 12px;
+    }
+  }
+
+  &-accomodation {
+    width: 46.9%;
+    border-radius: 10px;
+
+    @include md {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    &-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 24px;
+
+      @include md {
+        margin-top: 0;
+        flex-flow: column nowrap;
+      }
+    }
+
+    &-header {
+      position: relative;
+    }
+
+    &-title {
+      z-index: 1;
+      height: 52px;
+      padding-left: 20px;
+      margin: 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      background: $color-primary;
+      border-radius: 10px;
+      color: $white;
+
+      @include md {
+        height: 30px;
+        font-size: 13px;
+        padding-left: 11px;
+        border-radius: 5px;
+      }
+    }
+
+    &-icon {
+      z-index: 1;
+      position: absolute;
+      top: 10px;
+      right: 9px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      @include md {
+        width: 19px;
+        height: 19px;
+        right: 5px;
+        top: 5px;
+      }
+    }
+
+    &-content {
+      border-radius: 10px;
+      padding: 40px 20px 53px;
+      margin-top: -10px;
+      font-size: 18px;
+      font-weight: 400;
+      background: $gray-lighter;
+      color: $color-primary;
+
+      @include md {
+        border-radius: 5px;
+        padding: 23px 7px 1px 11px;
+        margin-top: -6px;
+        font-size: 12px;
+      }
     }
   }
 }

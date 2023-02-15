@@ -1,0 +1,60 @@
+.accomodation {
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0 24px;
+    color: $color-primary;
+
+    @include md {
+      flex-flow: column nowrap;
+      margin: 15px 0 16px;
+    }
+  }
+
+  &-title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+
+    @include md {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+  }
+
+  &-location {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+
+    @include md {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-title-and-tags {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &-host-and-rating {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @include md {
+      width: 100%;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

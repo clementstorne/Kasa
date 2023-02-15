@@ -1,0 +1,9 @@
+.star-icon {
+  margin-left: 10px;
+
+  @include md {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+}
