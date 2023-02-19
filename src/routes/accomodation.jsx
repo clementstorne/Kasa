@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Slideshow from "../components/Slideshow";
 import Host from "../components/Host";
 import Tag from "../components/Tag";
 import Rating from "../components/Rating";
@@ -25,10 +26,14 @@ export default function Accomodation() {
     <Tag key={index} content={item} />
   ));
 
-  console.log(accomodationData.tags);
   return (
     <>
       <Header />
+
+      <Slideshow
+        title={accomodationData.title}
+        images={accomodationData.pictures}
+      />
 
       <section>
         <header className="accomodation-header">
