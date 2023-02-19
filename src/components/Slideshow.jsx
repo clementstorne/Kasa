@@ -25,21 +25,36 @@ function Slideshow(props) {
     }
   }
 
-  return (
-    <div className="slideshow">
-      <img
-        src={props.images[currentMediaIndex]}
-        alt={props.title}
-        className="slideshow-image"
-      />
-      <div className="slideshow-previous">
-        <img src={previousIcon} alt="" onClick={() => previous()} />
+  if (maxIndex > 0) {
+    return (
+      <div className="slideshow">
+        <img
+          src={props.images[currentMediaIndex]}
+          alt={props.title}
+          className="slideshow-image"
+        />
+        <div className="slideshow-previous">
+          <img src={previousIcon} alt="" onClick={() => previous()} />
+        </div>
+        <div className="slideshow-next">
+          <img src={nextIcon} alt="" onClick={() => next()} />
+        </div>
+        <div className="slideshow-counter">
+          {currentMediaIndex + 1} / {maxIndex + 1}
+        </div>
       </div>
-      <div className="slideshow-next">
-        <img src={nextIcon} alt="" onClick={() => next()} />
+    );
+  } else {
+    return (
+      <div className="slideshow">
+        <img
+          src={props.images[currentMediaIndex]}
+          alt={props.title}
+          className="slideshow-image"
+        />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Slideshow;
