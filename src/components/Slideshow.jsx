@@ -25,7 +25,7 @@ function Slideshow(props) {
     }
   }
 
-  if (maxIndex > 0) {
+  if (props.images.length > 1) {
     return (
       <div className="slideshow">
         <img

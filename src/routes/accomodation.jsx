@@ -1,3 +1,5 @@
+import { redirect } from "react-router-dom";
+
 import Header from "../components/Header";
 import Slideshow from "../components/Slideshow";
 import Host from "../components/Host";
@@ -14,6 +16,15 @@ export default function Accomodation() {
   const accomodationData = data.filter(
     (accomodation) => accomodation.id === accomodationId
   )[0];
+
+  if (!accomodationData) {
+    // return redirect("/error");
+    throw new Response("", {
+      status: 404,
+      statusText: "Not Found",
+    });
+  }
+
   const host = accomodationData.host;
 
   const equipments = accomodationData.equipments.map((item) => (
