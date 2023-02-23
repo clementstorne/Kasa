@@ -9,3 +9,33 @@ Projet n°11 du [parcours Développeur d'Application - JavaScript React](https:/
 - React
 - Create React App
 - React Router
+
+## 📦 Installation
+
+### 🧰 Prérequis
+
+Pour lancer le projet, vous devez avoir les programmes suivants installés sur votre machine :
+
+- NodeJS
+
+### 🖥️ Installation de l'application Frontend
+
+Afin d'initialiser le projet, dans la console, exécutez la commande suivante :
+
+```
+npx create-react-app kasa
+```
+
+Ensuite, pour installer les packages requis pour le fonctionnement de l'application, exécutez la commande :
+
+```
+npm install
+```
+
+Enfin, exécutez la commande suivante pour démarrer l'application :
+
+```
+npm start
+```
+
+Par défaut, l'application est accessible à l'adresse `localhost:3000`
