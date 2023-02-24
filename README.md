@@ -9,6 +9,7 @@ Projet n°11 du [parcours Développeur d'Application - JavaScript React](https:/
 - React
 - Create React App
 - React Router
+- Sass
 
 ## 📦 Installation
 
