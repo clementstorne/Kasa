@@ -5,6 +5,7 @@ import Tag from "../components/Tag";
 import Rating from "../components/Rating";
 import Dropdown from "../components/Dropdown";
 import Footer from "../components/Footer";
+import Error404 from "../components/Error404";
 
 import data from "../data/logements.json";
 
@@ -16,10 +17,12 @@ export default function Accomodation() {
   )[0];
 
   if (!accomodationData) {
-    throw new Response("", {
-      status: 404,
-      statusText: "Not Found",
-    });
+    return (
+      <>
+        <Header />
+        <Error404 />
+      </>
+    );
   }
 
   const host = accomodationData.host;
