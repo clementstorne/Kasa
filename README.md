@@ -1,4 +1,4 @@
-# Billed
+# Kasa
 
 Projet n°11 du [parcours Développeur d'Application - JavaScript React](https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react) d'OpenClassrooms : _Développez une application Web avec React et React Router_.
 
